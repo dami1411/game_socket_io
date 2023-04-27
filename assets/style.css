@@ -1,0 +1,16 @@
+#my_canvas{
+    border:solid;
+    margin:0 auto;
+}
+#score_sx_col{
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    text-align: center;
+}
+#list_messages li{
+    list-style: none;
+}
+

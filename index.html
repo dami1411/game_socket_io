@@ -26,7 +26,7 @@
     <div class="main">
       <div class="sx_col">
         <div id="title_sx_col"><h6>Lista utenti online</h6></div>
-        <div id="score_sx_col"> </div>     
+        <div id="score_sx_col"></div>     
     </div>
     <div class="center_col">
       <div id="title_center_col"><h6>in attesa di almeno 2 giocatori</h6></div>
@@ -36,7 +36,8 @@
       
      
     
-    <div class="chat_div">     
+    <div class="chat_div">
+      <h6>Chat</h6>     
       <ul id="list_messages"> </ul>
       <form id="form_chat_div">
         <input id="input_chat_div" autocomplete="off"/><button >Send</button>
@@ -209,7 +210,7 @@ function getPosition(event){
         
       
       for(u of user_connected)    
-         html+="<span id ="+u+">"+u+":"+"0 points</span>";
+         html+="<li id ="+u+">"+u+":"+"0 points</li>";
 
       score_sx_col.style.display="flex";   
       score_sx_col.innerHTML=html;
